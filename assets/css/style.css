@@ -6,29 +6,29 @@
 
 
 
-.debug .main{
+.main{
     height: 100vh;
     background-color: aqua;
-    display: flex;
+
 }
-.debug .sidebar{
+.sidebar{
     width: 280px;
     background-color: aquamarine;
 }
 
-.debug .display{
-    height: 100vh;
+.display{
+    height: 100%;
     width: 100%;
     background-color: beige;
 }
 
-.debug .banner{
+ .banner{
     height: 180px;
     background-color: blue;
 }
 
-.debug .player{
-    height: 280px;
+ .player{
+    height: 180px;
     width: 100%;
     background-color: black;
 }
