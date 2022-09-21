@@ -6,29 +6,40 @@
 
 
 
-.main{
+main{
     height: 100vh;
     background-color: aqua;
-
 }
 .sidebar{
     width: 280px;
+    height: 100%;
     background-color: aquamarine;
 }
 
+.library{
+    width: 100%;
+    background-color: red;
+    position: relative;
+}
+
+
 .display{
-    height: 100%;
+    height: calc(100vh - 80px);
     width: 100%;
     background-color: beige;
+    display: flex;
 }
 
  .banner{
     height: 180px;
+    width: 100%;
     background-color: blue;
+    position: absolute;
+    top: 0;
 }
 
  .player{
-    height: 180px;
+    height: 80px;
     width: 100%;
     background-color: black;
 }
