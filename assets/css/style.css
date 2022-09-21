@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+
+.debug .main{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+}
+.debug .sidebar{
+    width: 280px;
+    background-color: aquamarine;
+}
+
+.debug .display{
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+}
+
+.debug .banner{
+    height: 180px;
+    background-color: blue;
+}
+
+.debug .player{
+    height: 280px;
+    width: 100%;
+    background-color: black;
+}
