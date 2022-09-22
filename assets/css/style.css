@@ -35,6 +35,27 @@ img{
     max-width: 100%;
 }
 
+h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+
+}
+
+h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 12px;
+    font-weight: 700;
+    color: #797B80;
+    ;
+}
 /*#endregion general */
 
 /*#region main */
@@ -130,7 +151,6 @@ li{
 .library {
     width: 100%;
     background-color: red;
-    position: relative;
 }
 
 
@@ -145,8 +165,6 @@ li{
     height: 90px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.500);
-    position: absolute;
-    top: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -163,8 +181,77 @@ li{
 
 }
 
+.music{
+    height: calc( 100% - 90px);
+    overflow-y: auto;
+}
+}
+
+.container{
+    max-width: 1440px;
+}
+
+.row{
+    height: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.title_row{
+    padding-left: 2px;
+}
+
+.album_row{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    padding: 10px;
+}
+.song{
+    width: calc( 100% / 6 - 1rem);
+    background: blue;
+    aspect-ratio: 1/1;
+    text-align: center;
+}
+
+
+
+
+/*#region player  */
 .player {
     height: 80px;
     width: 100%;
-    background-color: black;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
 }
+
+.b_left, .b_right{
+    width: 25%;
+}
+
+.b_center{
+    width: 50%;
+    text-align: center;
+}
+
+.b_right{
+    text-align: end;
+}
+
+.container_player{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.album_active{
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+}
+
+.title_album_active .nav_link{
+    padding: 0;
+}
+
+/*#endregion player  */
