@@ -264,6 +264,7 @@ a.nav_link.active_section {
     background-color: #282828;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .b_left, .b_right{
@@ -277,6 +278,7 @@ a.nav_link.active_section {
 
 .b_right{
     text-align: end;
+
 }
 
 .container_player{
@@ -292,11 +294,12 @@ a.nav_link.active_section {
 
 .title_album_active .nav_link{
     padding: 0;
+    font-size: 10px;
 }
 
 .title_album_active h3{
     color:white;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .mg_left_40{
@@ -359,7 +362,7 @@ a.nav_link.active_section {
 
 .audio{
     height: 100%;
-    
+    margin-right: 10px;
 }
 
 .audio> i{
@@ -372,3 +375,52 @@ a.nav_link.active_section {
 
 
 /*#endregion player  */
+
+/*#region media query  */
+
+@media screen and (max-width: 879px) {
+    .nav_library {
+        text-align: center;
+        margin: 20px 0;
+        line-height: 50px;
+    }
+
+    .album_row {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        gap: 1rem;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .song {
+        width: calc( 100% / 4 - 1rem);
+        aspect-ratio: 1/1;
+        text-align: center;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 639px) {
+    .icons.d_flex.mg_left_40 {
+        flex-direction: column;
+    }
+
+    .song {
+        width: calc( 100% / 2 - 1rem);
+        aspect-ratio: 1/1;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    
+}
+
+
+/*#endregion media query  */
