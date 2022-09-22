@@ -198,7 +198,7 @@ li{
 }
 
 .title_row{
-    padding-left: 2px;
+    padding-left: 12px;
 }
 
 .album_row{
@@ -212,6 +212,10 @@ li{
     background: blue;
     aspect-ratio: 1/1;
     text-align: center;
+}
+
+.artist{
+    border-radius: 100%;
 }
 
 
