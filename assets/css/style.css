@@ -23,12 +23,34 @@
     justify-content: center;
 }
 
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
 .mg_10{
     margin: 10px 0;
 }
 
+.mg_right_10{
+    margin-right: 10px;
+}
+
+.mg_top_15{
+    margin-top: 15px;
+}
 .mb_auto{
     margin-bottom: auto;
+}
+
+.mg_left_20{
+    margin-left: 20px;
+}
+.mg_right_20{
+    margin-right: 20px;
 }
 
 img{
@@ -150,7 +172,8 @@ li{
 
 .library {
     width: 100%;
-    background-color: red;
+    background-color: #141922;
+    ;
 }
 
 
@@ -191,6 +214,20 @@ li{
     max-width: 1440px;
 }
 
+.nav_library{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav_library .nav_link{
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+a.nav_link.active_section {
+    border-bottom: 3px solid yellowgreen;
+}
+
 .row{
     height: 100%;
     display: flex;
@@ -209,7 +246,6 @@ li{
 }
 .song{
     width: calc( 100% / 6 - 1rem);
-    background: blue;
     aspect-ratio: 1/1;
     text-align: center;
 }
@@ -257,5 +293,82 @@ li{
 .title_album_active .nav_link{
     padding: 0;
 }
+
+.title_album_active h3{
+    color:white;
+    font-size: 16px;
+}
+
+.mg_left_40{
+    margin-left: 40px;
+}
+.icons{
+    color: #707070;
+
+}
+
+.icons_player{
+    margin: 10px 0;
+}
+
+.icons_player> i{
+    color: white;
+    font-size: 18px;
+    
+}
+
+.big{
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    margin: 0 30px;
+}
+
+.time{
+    color: white;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.bar_dark{
+    background-color: #5A5A5A;
+    height: 3px;
+    width: 40%;
+    border-radius: 36px;
+}
+
+.bar_light{
+    background-color: #C1C1C1;
+    height: 3px;
+    width: 20%;
+    border-radius: 36px;
+}
+
+.point{
+    background-color: yellowgreen;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    left: 39%;
+    display: none;
+}
+
+.volume{
+    left: 55%;
+}
+
+.audio{
+    height: 100%;
+    
+}
+
+.audio> i{
+    color: white;
+    font-size: 14px;
+    margin: 0 10px;
+    
+}
+
+
 
 /*#endregion player  */
