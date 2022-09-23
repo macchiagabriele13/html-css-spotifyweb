@@ -107,6 +107,10 @@ main {
     width: 60%;
 }
 
+.spotify-logo{
+    display: none;
+    height: 25px;
+}
 .nav{
     margin: 30px 0;
 }
@@ -260,6 +264,10 @@ a.nav_link.active_section {
     border-radius: 100%;
 }
 
+.box_profile{
+  height: 100%; 
+  align-items: flex-end;
+}
 
 
 
@@ -457,7 +465,45 @@ a.nav_link.active_section {
         height: 25px;
         margin-right: 0; 
     }
+
+    .spotify-logo{
+        display: block;
+        height: 25px;
+    }
+
+    .spotify-logo--text{
+        display: none;
+       
+    }
     
+    .playlist{
+        display: none;
+    }
+
+    .nav_library .nav_link {
+        padding: 0;
+        font-weight: bold;
+    }
+    
+    .sidebar {
+    width: 50px;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .nav {
+    margin: 0;
+    }
+
+    .profile_icon {
+        width: 25px;
+        height: 25px;
+        border: 1px solid white;
+        border-radius: 100%;
+        background-color: gray;
+        margin-right: 0;
+    }
 }
 
 
